@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    $.ajax({
+        url: "https://localhost:44383/API/Employees/TestCORS",
+        success: function (result) {
+            console.log(result);
+        }
+    })
+</script>
