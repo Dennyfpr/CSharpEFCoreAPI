@@ -110,3 +110,9 @@ C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Client.pdb
 C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
 C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\TestCors\Index.cshtml.g.cs
 C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Client.csproj.AssemblyReference.cache
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\LatJs\Index.cshtml.g.cs
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\LatAjax\Index.cshtml.g.cs
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\Pokedex\Index.cshtml.g.cs
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\MDEmp\Index.cshtml.g.cs
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Admin.cshtml.g.cs
+C:\Users\inede\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\ExChart\Index.cshtml.g.cs

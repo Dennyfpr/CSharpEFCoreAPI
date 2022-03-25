@@ -75,8 +75,7 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseCors(options => options.WithOrigins("https://localhost:44392"));
+            app.UseCors(options => options.WithOrigins("https://localhost:44392").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
             app.UseAuthentication();
             app.UseAuthorization();

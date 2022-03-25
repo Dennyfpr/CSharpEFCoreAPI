@@ -25,8 +25,9 @@ namespace API.Controllers
             this._configuration = configuration;
         }
 
-        [Authorize(Roles = "Director, Manager")]
+        [AllowAnonymous]
         [HttpGet("masterdata")]
+        [EnableCors("AllowOrigin")]
         public ActionResult GetMasterEmployeeData()
         {
             try

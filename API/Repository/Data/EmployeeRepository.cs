@@ -23,6 +23,8 @@ namespace API.Repository.Data
                          join p in myContext.Profilings on a.NIK equals p.NIK
                          join d in myContext.Educations on p.Education_Id equals d.Id
                          join u in myContext.Universities on d.University_Id equals u.Id
+                         //join ar in myContext.AccountsRoles on a.NIK equals ar.NIK
+                         //join r in myContext.Roles on ar.Id equals r.Id
                          select new
                          {
                              NIK = e.NIK,
@@ -32,6 +34,7 @@ namespace API.Repository.Data
                              Email = e.Email,
                              BirthDate = e.BirthDate,
                              Salary = e.Salary,
+                             //Roles = r.Name,
                              Education_Id = p.Education_Id,
                              GPA = d.GPA,
                              Degree = d.Degree,
