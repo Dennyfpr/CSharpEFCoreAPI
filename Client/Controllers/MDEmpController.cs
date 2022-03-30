@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Client.Controllers
 {
-    [Authorize]
     public class MDEmpController : Controller
     {
         
