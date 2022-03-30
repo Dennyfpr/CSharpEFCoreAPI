@@ -115,7 +115,7 @@ $.ajax({
 
             if ($(`#editDataForm${idx + 1}`).valid()) {
                 $.ajax({
-                    url: "https://localhost:44383/API/employees/",
+                    url: "https://localhost:44392/employees/put/",
                     type: "PUT",
                     data: data,
                     contentType: "application/json"
@@ -169,7 +169,7 @@ $.ajax({
         window[`dD${idx + 1}`] = document.getElementById(`dataDelete${idx + 1}`);
         window[`dD${idx + 1}`].addEventListener('click', function () {
             $.ajax({
-                url: "https://localhost:44383/API/employees/" + val.nik,
+                url: "https://localhost:44392/employees/delete/" + val.nik,
                 type: "DELETE",
                 data: {},
                 contentType: "application/json"
@@ -216,7 +216,7 @@ dS.addEventListener('click', function () {
 
     if ($("#addDataForm").valid()) {
         $.ajax({
-            url: "https://localhost:44383/API/Accounts/Register",
+            url: "https://localhost:44392/employees/createnewprofile",
             type: "POST",
             data: data,
             contentType: "application/json"
@@ -241,7 +241,7 @@ dS.addEventListener('click', function () {
 $(document).ready(function () {
     let tb = $('#tbEmp').DataTable({
         ajax: {
-            url: 'https://localhost:44383/API/Employees/masterdata',
+            url: 'https://localhost:44392/employees/getallprofile',
             dataSrc: ''
         },
         dom: 'Bfrtip',
@@ -292,6 +292,9 @@ $(document).ready(function () {
             { data: 'email' },
             { data: 'phone' },
             { data: 'salary', render: function (data, type, row) { return '$' + data } },
+            { data: 'gpa' },
+            { data: 'degree' },
+            { data: 'universityName' },
             { data: null, render: function (data, type, row, meta) { return `<p class="text-center mb-0"><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#ModalEmpEdit${meta.row + meta.settings._iDisplayStart + 1}">Edit</button> <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#ModalEmpDel${meta.row + meta.settings._iDisplayStart + 1}">X</button></p>`; } }
         ]
     });

@@ -40,6 +40,7 @@ namespace API.Repository
 
         public int Update(Entity entity)
         {
+            entities.Attach(entity);
             myContext.Entry(entity).State = EntityState.Modified;
             var result = myContext.SaveChanges();
             return result;

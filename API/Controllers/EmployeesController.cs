@@ -48,6 +48,30 @@ namespace API.Controllers
             }
         }
 
+        //[AllowAnonymous]
+        //[HttpPut("{id}")]
+        //[EnableCors("AllowOrigin")]
+        //public ActionResult UpdateSalary(string id)
+        //{
+        //    try
+        //    {
+        //        var mEmpData = employeeRepository.GetMasterEmployeeData();
+        //        if (mEmpData == null)
+        //        {
+        //            return BadRequest("Tabel kosong atau tidak ditemukan");
+        //        }
+        //        else if (mEmpData != null)
+        //        {
+        //            return Ok(mEmpData);
+        //        }
+        //        return BadRequest("Gagal mengambil data!");
+        //    }
+        //    catch
+        //    {
+        //        return BadRequest("Error, Terjadi kesalahan!");
+        //    }
+        //}
+
         [HttpGet("TestCORS")]
         [EnableCors("AllowOrigin")]
         public ActionResult TestCORS()
